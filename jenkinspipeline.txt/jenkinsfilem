@@ -1,0 +1,11 @@
+pipeline{
+    agent any
+    tools {
+        maven 'maven-3.6.3'
+    }
+    stages {
+        stage ('git checkout') {
+            git url:'https://github.com/mohandevops1869/war-web-project.git'git
+        }
+    }
+}
